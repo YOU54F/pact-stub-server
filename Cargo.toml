@@ -44,3 +44,11 @@ pretty_assertions = "1.3.0"
 test-log = "0.2.11"
 env_logger = "0.10.0"
 trycmd = "0.14.16"
+
+[profile.release]
+# https://github.com/johnthagen/min-sized-rust
+strip = true  # Automatically strip symbols from the binary.
+opt-level = "z"  # Optimize for size.
+codegen-units = 1
+panic = "abort"
+lto = true
