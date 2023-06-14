@@ -11,7 +11,7 @@ gzip -c target/release/pact-stub-server > target/artifacts/pact-stub-server-linu
 openssl dgst -sha256 -r target/artifacts/pact-stub-server-linux-x86_64.gz > target/artifacts/pact-stub-server-linux-x86_64.gz.sha256
 
 echo -- Build the aarch64 release artifacts --
-cargo install cross
+cargo install cross --git https://github.com/cross-rs/cross
 cross build --target aarch64-unknown-linux-gnu --release
 gzip -c target/aarch64-unknown-linux-gnu/release/pact-stub-server > target/artifacts/pact-stub-server-linux-aarch64.gz
 openssl dgst -sha256 -r target/artifacts/pact-stub-server-linux-aarch64.gz > target/artifacts/pact-stub-server-linux-aarch64.gz.sha256
