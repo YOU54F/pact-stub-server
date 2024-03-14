@@ -8,3 +8,4 @@ release_artifacts
 
 /.idea/
 *.iml
+.DS_Store
