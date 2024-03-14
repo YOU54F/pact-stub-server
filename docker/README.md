@@ -19,13 +19,15 @@ docker buildx create --name multiarch --use
 Build images
 
 ```shell
-docker buildx build -t you54f/pact-stub-server:v$DOCKER_TAG --build-arg VERSION=$DOCKER_TAG --platform linux/amd64,linux/arm64 .
+export DOCKER_TAG=0.6.0
+docker buildx build -t you54f/pact-stub-server:$DOCKER_TAG --build-arg VERSION=$DOCKER_TAG --platform linux/amd64,linux/arm64 .
 docker buildx build -t you54f/pact-stub-server:latest --build-arg VERSION=$DOCKER_TAG --platform linux/amd64,linux/arm64 .
 ```
 
 Build & Push images - will use cached images if available
 
 ```shell
-docker buildx build -t you54f/pact-stub-server:v$DOCKER_TAG --build-arg VERSION=$DOCKER_TAG --platform linux/amd64,linux/arm64 --push .
+export DOCKER_TAG=0.6.0
+docker buildx build -t you54f/pact-stub-server:$DOCKER_TAG --build-arg VERSION=$DOCKER_TAG --platform linux/amd64,linux/arm64 --push .
 docker buildx build -t you54f/pact-stub-server:latest --build-arg VERSION=$DOCKER_TAG --platform linux/amd64,linux/arm64 --push .
 ```
