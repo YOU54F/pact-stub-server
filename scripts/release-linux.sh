@@ -2,6 +2,7 @@
 
 set -e
 
+mkdir -p release_artifacts
 echo -- Build the musl release artifacts --
 cargo install cross@0.2.5
 cargo clean
