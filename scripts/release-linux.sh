@@ -3,7 +3,7 @@
 set -e
 
 echo -- Build the musl release artifacts --
-rustup target add x86_64-unknown-linux-musl
+cargo install cross@0.2.5
 cargo clean
 cross build --release --target=x86_64-unknown-linux-musl
 gzip -c target/x86_64-unknown-linux-musl/release/pact-stub-server > release_artifacts/pact-stub-server-linux-x86_64-musl.gz
