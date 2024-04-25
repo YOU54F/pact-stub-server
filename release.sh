@@ -102,7 +102,7 @@ build_windows_aarch64() {
 
 case "$OS" in
   Linux)    echo "Building for Linux"
-            # build_linux_x86_64
+            build_linux_x86_64
             build_linux_aarch64
             ;;
   Windows)  echo "Building for windows"
