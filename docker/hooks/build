@@ -14,7 +14,7 @@ if [[ "${DOCKER_TAG}" =~ "refs"* ]]; then
 fi
 
 echo "Building version $DOCKER_TAG"
-# docker buildx create --name multiarch --use
+docker buildx create --name multiarch --use
 if [[ "$PUSH_IMAGE" == 'true' ]]; then
     PUSH_CMD=' --push'
 fi
