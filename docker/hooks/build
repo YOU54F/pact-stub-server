@@ -1,7 +1,11 @@
 #!/bin/bash 
 set -e
 
+# if a release use the version number from refs/tags, strip the v
 DOCKER_TAG=$(echo "$DOCKER_TAG" | sed 's/^refs\/tags\/v//')
+# if we are running on a branch, use refs/heads and replace / with -
+DOCKER_TAG=$(echo "$DOCKER_TAG" | sed 's/^refs\/heads\///')
+DOCKER_TAG=$(echo "$DOCKER_TAG" | sed 's/\//-/')
 echo "Building version $DOCKER_TAG"
 docker buildx create --name multiarch --use
 if [[ "$PUSH_IMAGE" == 'true' ]]; then
