@@ -1,5 +1,42 @@
 To generate the log, run `git log --pretty='* %h - %s (%an, %ad)' TAGNAME..HEAD .` replacing TAGNAME and HEAD as appropriate.
 
+# 0.7.0 - [Feat Release]
+
+* ac5344e - fix: remove pathname from release artifact shasum (Yousaf Nabi, Fri Oct 24 13:56:27 2025 +0100)
+* 1ddbc54 - chore(ci): fix release workflow (macos) (Yousaf Nabi, Fri Oct 24 13:53:26 2025 +0100)
+* 793fa3b - chore(ci): fix release workflow (macos) (Yousaf Nabi, Fri Oct 24 13:52:17 2025 +0100)
+* 45e0056 - feat: add file watch mode for hot reloading pact files/dirs (Yousaf Nabi, Thu Oct 23 23:43:13 2025 +0100)
+* eebe3fe - feat: update to hyper 1.x / latest tower (Yousaf Nabi, Thu Oct 23 23:35:30 2025 +0100)
+* a4f02ae - chore: rename main.rs to lib.rs to align with rust conventions (Yousaf Nabi, Wed Oct 8 22:19:35 2025 +0100)
+* a36631c - ci: switch windows-2019 to windows-latest (Yousaf Nabi, Sat Sep 27 11:50:22 2025 +0100)
+* 56ccc6a - feat: cli as lib (Yousaf Nabi, Sat Sep 27 11:47:46 2025 +0100)
+* 7548780 - chore: Correct the release script (Ronald Holshausen, Wed May 21 16:07:31 2025 +1000)
+* 92ce531 - bump version to 0.6.3 (Ronald Holshausen, Wed May 21 15:27:53 2025 +1000)
+* 1edc459 - update changelog for release 0.6.2 (Ronald Holshausen, Wed May 21 15:25:35 2025 +1000)
+* 1a51ae7 - chore: Update pact_verifier to 1.3.0 (Ronald Holshausen, Wed May 21 15:12:44 2025 +1000)
+* a0fd845 - fix: Honour the insecure_tls flag when fetching Pacts from a Pact Broker #75 (Ronald Holshausen, Tue May 20 16:28:25 2025 +1000)
+* 1b2580f - chore: Upgrade the Pact crates to latest versions (Ronald Holshausen, Tue May 20 15:40:59 2025 +1000)
+* 85fd8f5 - chore: Upgrade the Pact crates (Ronald Holshausen, Tue May 20 15:32:30 2025 +1000)
+* 95e253f - chore: Update project to Rust 2024 edition (Ronald Holshausen, Tue May 20 10:34:35 2025 +1000)
+* 9665d36 - chore: Update dependencies (Ronald Holshausen, Tue May 20 10:32:49 2025 +1000)
+* 0d39f57 - chore: scheduled Ubuntu 20.04 retirement (Ronald Holshausen, Mon May 12 09:46:13 2025 +1000)
+* f4e42b4 - chore: Correct the author field (Ronald Holshausen, Mon May 12 09:21:57 2025 +1000)
+* 6269fa6 - bump version to 0.6.2 (Ronald Holshausen, Mon May 12 09:20:30 2025 +1000)
+* 394b935 - update changelog for release 0.6.1 (Ronald Holshausen, Mon May 12 09:17:33 2025 +1000)
+* 7188299 - perf: Use MiMalloc as global allocator to improve performance (Stefan Ansing, Tue May 6 16:15:21 2025 +0200)
+* ef0e8e4 - perf: Move shared data into Arc (Stefan Ansing, Tue May 6 16:12:28 2025 +0200)
+* 43437ac - chore(ci): upgrade macos-12 to macos-13 (JP-Ellis, Fri Dec 6 09:33:47 2024 +1100)
+* c5383f4 - chore(docs): typo in link name (Yousaf Nabi, Mon May 20 13:14:27 2024 +0100)
+* bc78875 - chore(docs): update badge link to correct repo (Yousaf Nabi, Mon May 20 13:13:33 2024 +0100)
+* 7772232 - docs: docker/binary compatibility notes (Yousaf Nabi, Mon May 20 13:12:37 2024 +0100)
+* 7a7094b - bump version to 0.6.1 (Yousaf Nabi, Fri May 10 16:23:21 2024 +0100)
+* 394b2ac - update changelog for release 0.6.0 (Yousaf Nabi, Fri May 10 16:13:39 2024 +0100)
+* 9387eb1 - chore(ci): remove cache workspace subdir (Yousaf Nabi, Fri Apr 26 15:49:13 2024 +0100)
+* 2325de3 - feat: reduce executable size (Yousaf Nabi, Thu Apr 25 19:06:53 2024 +0100)
+* efa86ca - feat: linux musl static bins / windows aarch64 (Yousaf Nabi, Thu Apr 25 17:56:00 2024 +0100)
+* 82beb3e - chore: fixup path to musl artifact (Yousaf Nabi, Thu Feb 8 22:48:21 2024 +0000)
+* cea01c6 - chore(deps): update cargo lock (Yousaf Nabi, Thu Feb 8 22:08:30 2024 +0000)
+
 # 0.6.2 - Correct the insecure_tls flag with a Pact Broker
 
 * 1a51ae7 - chore: Update pact_verifier to 1.3.0 (Ronald Holshausen, Wed May 21 15:12:44 2025 +1000)
